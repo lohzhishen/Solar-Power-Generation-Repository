@@ -1,0 +1,133 @@
+html {
+    background-color: #d6d4e0;
+}
+
+html, header, body {
+    width: 100%;
+    height: 100%;
+}
+
+html, header, body, h1, h2, h3, h4, h5, h6, P  {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Open Sans", verdana, arial, sans-serif;
+    color:#444;
+}
+
+p {
+    font-size: 16px;
+}
+
+.header {
+    border: 0;
+    padding: 2px;
+    margin: 0;
+    margin-bottom: 5px;
+
+    background-color: #622569;
+    text-align: center;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.header-icon, .header-title, .header-subtitle {
+    padding: 2px;
+    color: #d6d4e0;
+    font-size: 40px;
+    text-shadow: -1px 1px 0 #444,
+                 1px 1px 0 #444,
+                 1px -1px 0 #444,
+                 -1px -1px 0 #444;
+}
+
+.header-subtitle {
+    padding-bottom: 5px;
+}
+
+.main {
+    border: 50px;
+    width: auto;
+    margin: auto;
+    display: flex;
+
+    justify-content: center;
+    
+}
+
+.left-body, .right-body {
+    float: left;
+
+    background-color: white;
+
+    border: outset;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.right_body {
+    display: block;
+    width: 40vw;
+    height: 60vh;
+    padding: 20px;
+}
+
+.graph {
+    width: 40vw;
+    height: 60vh;
+    margin: 20px;
+}
+
+.alert-title, .alert-body, .alert-old, .alert-new, .alert-null {
+    padding: 0;
+    margin: 20px;
+    border: 0;
+    
+    display: block;
+    width: 40vw;
+}
+
+.alert-body, .alert-new {
+    margin: 20px;
+}
+
+.alert-old {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.alert-null {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.alert-title {
+    margin: 40px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.alert-body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 50vh;
+}
+
+.alert-body::-webkit-scrollbar {
+    display: none;
+}
+
+.alert-new {
+    font-weight: bold;
+    color: #800000;
+}
+
+.alert-old {
+    font-weight: normal;
+}
