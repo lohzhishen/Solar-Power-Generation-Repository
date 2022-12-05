@@ -2,7 +2,7 @@
 
 By: Loh Zhi Shen
 
-Last updated: 25 August 2022
+Last updated: 5 December 2022
 
 <strong>Summary:</strong>
 * Anaylsed solar power generated in Python to identify underperforming solar panels.
@@ -90,7 +90,7 @@ The features of this dashboard are as follows:
 ## <strong>Learning Points</strong>
 
 * Robust linear regressors - HuberRegressor.
-* Hypothesis testsing - Z test.
+* Hypothesis testsing - T test.
 * Outlier detection.
 * Combine different statistical and machine learning tools to cover for each other's weaknesses.
 * A new data visualization library - Plotly.
