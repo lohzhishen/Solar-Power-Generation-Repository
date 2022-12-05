@@ -11,7 +11,7 @@ from model import DataModel
 
 # should be current time
 # however, for simulation purposes, a fixed time is used.
-START = datetime.datetime(2020, 6, 14, 13, 30)
+START = datetime.datetime(2020, 6, 1, 12, 00)
 
 def main(debug = False):
     """Main function for app."""

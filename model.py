@@ -77,12 +77,11 @@ class PredictionModel:
         """
         assert len(X) == len(Y)
 
-        self.critical_value = st.norm.ppf(self.significance_level)
-
         self.model.fit(X, Y)
         residues = Y - self.model.predict(X)
 
-        self.variance = np.sum(residues**2) / (len(X) - 1)
+        self.variance = np.sum(residues**2) / (len(Y) - 1)
+        self.threshold = st.t.ppf(self.significance_level, len(Y) - 1)
     
     def predict(self, X, Y):
         """Classifies whether a data point is an outlier or inlier.
@@ -98,8 +97,9 @@ class PredictionModel:
                 that it is an inlier.
         """
         assert len(X) == len(Y)
+        assert self.threshold is not None
         
         residues = Y - self.model.predict(X)
         test_statistic = residues / self.variance**0.5
-        outlier = test_statistic < self.critical_value
+        outlier = test_statistic < self.threshold
         return outlier
